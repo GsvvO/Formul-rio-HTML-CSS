@@ -1,7 +1,5 @@
-## Projeto Awax
+## Exercicio Formulário
 
-    Recriação de uma página proposto pelo curso B7WEB
+    Página de formulário proposto pelo curso B7WEB
 
-    Base do projeto continua a mesma entretanto há algumas modificações feitas com intuito de estudo
-
-* Recriação somente para base de estudo
+* Página realizada com objetivo de estudo

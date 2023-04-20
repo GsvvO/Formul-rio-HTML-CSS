@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registre-se</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/registro.css">
+</head>
+<body>
+    <section>
+        <form action="#" method="post">
+
+            <h1>Registre-se agora</h1>
+
+            <div class="registro">
+                <fieldset>
+                    <legend>Dados Login</legend>
+                    
+                    <div class="login_registro">
+                        <label>
+                            <input type="text" name="login" required>
+                            <i>Usuário</i>
+                        </label>
+
+                        <label>
+                            <input type="password" name="password" required>
+                            <i>Senha</i>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+
+                    <div class="dados_pessoais_registro">
+                        <label>
+                            <input type="text" name="nome" required>
+                            <i>Nome completo</i>
+                        </label>
+
+                        <label>
+                            <input type="text" name="email" required>
+                            <i>E-mail</i>
+                        </label>
+
+                        <label class="data_nascimento">
+                            Data de nascimento: 
+                            <input type="date" name="idade" required>
+                        </label>
+
+                        <div class="orientacao_sexual">
+                            <h2>Orientação sexual</h2>
+
+                            <div class="orientacao_sexual_opcoes">
+                                <label>
+                                    <input type="radio" name="sexo">Masculino
+                                </label>
+                                
+                                <label>
+                                    <input type="radio" name="sexo">Feminino
+                                </label>
+        
+                                <label>
+                                    <input type="radio" name="sexo">Outro
+                                </label>
+                            </div>
+                        </div>         
+                    </div>       
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados Complementares</legend>
+
+                    <div class="dados_complementares_registro">
+                        <label>
+                            <textarea name=""></textarea>
+                            <i>Deixe seu comentário</i>
+                        </label>
+
+                    </div>
+                </fieldset>
+
+                <div class="termos">
+                    <label>
+                        <input type="checkbox" name="termos" required>
+                        Declaro que li e aceito todos os <a href="#">termos de uso</a>
+                    </label>
+                </div>
+
+                <div class="botoes">
+                    <a href="./index.html" id="voltar">Voltar</a>
+                    <button type="submit">Salvar</button>
+                    <button type="reset">Excluir</button>
+                </div>
+            </div>
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com0/css2?family=quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+:root{
+    --font-title: 'Bebas Neue', cursive;
+    --font-subtitle: 'Quicksand', sans-serif;
+    --branco: #ffffff;
+    --preto: #000000;
+    --roxo: #bb48e9;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../assets/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+/* Corpo da página */
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110rem;
+    height: 100%;
+}
+
+/* Título */
+form h1{
+    font-family: var(--font-title);
+    border-bottom: 2px solid var(--branco);
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+}
+/* ------------------------------- */
+
+
+/* Formulário */
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    padding: 2rem 2rem;
+    margin: 2rem 2rem;
+    border-radius: 2rem;
+    color: var(--branco);
+
+    background-color: rgba(255,255,255,0.2);
+    border-radius: 1rem;
+    backdrop-filter: blur(1rem);
+    box-shadow: 0 0 1rem 0 var(--branco);
+}
+
+.registro{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+/* Campos */
+fieldset{
+    padding: 1rem;
+    border: none;
+}
+
+/* Legendas dos Campos */
+legend{
+    font-family: var(--font-title);
+    font-size: 3.5rem;
+}
+
+/* Login registro */
+.login_registro > label, input[type="text"], input[type="password"]{
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-family: var(--font-subtitle);
+    font-size: 2rem;
+    color: var(--branco);
+    font-weight: 800;
+}
+
+.login_registro label i{
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+    font-style: normal;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.5rem;
+    pointer-events: none;
+    z-index: 1;
+
+    transition: all 0.2s ease-in;
+}
+
+.login_registro input:focus{
+    border: 2px solid var(--branco);
+}
+
+.login_registro input:focus ~ i,
+.login_registro input:valid ~ i{
+    top: -1rem;
+    font-size: 1.2rem;
+    margin: 1.2rem 0 0 0;
+    color: var(--branco);
+}
+
+/* Dados_pessoais_registro */
+.dados_pessoais_registro > label, input[type="text"], input[type="email"]{
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-family: var(--font-subtitle);
+    font-size: 2rem;
+    color: var(--branco);
+    font-weight: 800;
+}
+
+.dados_pessoais_registro label i{
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+    font-style: normal;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.5rem;
+    pointer-events: none;
+    z-index: 1;
+
+    transition: all 0.2s ease-in;
+}
+
+.dados_pessoais_registro input:focus{
+    border: 2px solid var(--branco);
+}
+
+.dados_pessoais_registro input:focus ~ i,
+.dados_pessoais_registro input:valid ~ i{
+    top: -1rem;
+    font-size: 1.2rem;
+    margin: 1.2rem 0 0 0;
+    color: var(--branco);
+}
+
+/* Dados complementares_registro */
+.dados_complementares_registro > label, textarea{
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-family: var(--font-subtitle);
+    font-size: 2rem;
+    color: var(--branco);
+    font-weight: 800;
+}
+
+.dados_complementares_registro label i{
+    position: absolute;
+    left: 1rem;
+    top: 1.2rem;
+    font-style: normal;
+    color: rgba(255,255,255,0.5);
+    font-size: 1.5rem;
+    pointer-events: none;
+    z-index: 1;
+
+    transition: all 0.2s ease-in;
+}
+
+.dados_complementares_registro textarea:focus{
+    border: 2px solid var(--branco);
+}
+
+.dados_complementares_registro textarea:focus ~ i,
+.dados_complementares_registro textarea:valid ~ i{
+    top: -1.5rem;
+    left: 0;
+    font-size: 1.2rem;
+    color: var(--branco);
+}
+
+/* Válido para os 3 campos */
+.login_registro, .dados_pessoais_registro, .dados_complementares_registro{
+    display: flex;
+    flex-direction: column;
+    gap:1.5rem;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 2.5rem 1rem 0;
+    border-radius: 0.4rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    background-color: rgba(230, 191, 230, 0.5);
+}
+
+input[type="text"]:hover, input[type="password"]:hover, input[type="email"]:hover, textarea:hover{
+    background-color: rgba(230, 191, 230, 0.8);
+}
+
+.data_nascimento input{
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.data_nascimento, .orientacao_sexual{
+    font-size: 1.5rem;
+}
+
+.orientacao_sexual_opcoes{
+    display: flex;
+    gap: 2rem;
+}
+
+.orientacao_sexual_opcoes input{
+    margin-right: 0.5rem;
+}
+
+textarea{
+    display: block;
+    width: 100%;
+    min-height: 10rem;
+    padding: 1rem 1rem;
+
+    resize: none;
+}
+
+.termos {
+    padding-left: 1rem;
+    font-family: var(--font-subtitle);
+    font-size: 1.3rem;
+    margin: 0 0 2rem 0;
+}
+
+.termos input{
+    margin-right: 0.2rem;
+}
+
+.termos i{
+    font-style: normal;
+}
+
+.termos a{
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.termos a:hover{
+    text-decoration: underline;
+}
+
+input[type="checkbox"]:checked, input[type="radio"]:checked{
+    accent-color: var(--roxo);
+}
+
+.botoes{
+    display: flex;
+    gap: 5rem;
+}
+
+.botoes > a, button{
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: calc(100% - 50%);
+    padding: 1rem;
+    height: auto;
+    font-size: 2rem;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.3);
+    border: rgba(255,255,255,0.7);;
+    color: var(--branco);
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-family: var(--font-subtitle);
+
+    transition: all 0.3s ease-in-out;
+}
+
+.botoes > a:hover, button:hover{
+    background-color: rgba(255,255,255,0.7);
+}
+
+/* Media Query */
+
+@media screen and (max-width: 650px) {
+    html{
+        font-size: 50%;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    html{
+        font-size: 40%; 
+    }
+    
+}

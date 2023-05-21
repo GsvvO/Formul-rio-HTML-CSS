@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <script src="./js/script.js" defer></script>
 </head>
 <body class="container">
     <section>
@@ -22,8 +23,9 @@
                 </label>
 
                 <label class="senha">
-                    <input type="password" required>
+                    <input id="typeChange" type="password" required>
                     <i>Senha</i>
+                    <ion-icon class="passwordChange" name="eye-outline" title="Mostrar senha"></ion-icon>
                 </label>
 
                 <button type="submit">Entrar</button>
@@ -34,5 +36,8 @@
             </form>
         </div>
     </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
